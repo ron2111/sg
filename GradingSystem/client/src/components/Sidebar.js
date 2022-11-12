@@ -1,7 +1,7 @@
 
 import React, { useState } from "react";
 import SimpleBar from 'simplebar-react';
-import { useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom"; 
 import { CSSTransition } from 'react-transition-group';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart ,faChartPie, faCog, faSignInAlt, faSignOutAlt, faTimes } from "@fortawesome/free-solid-svg-icons";
@@ -60,7 +60,7 @@ let Props = () => {
             {image ? <Image src={image} width={20} height={20} className="sidebar-icon svg-icon" /> : null}
 
             <span className="sidebar-text">{title}</span>
-          </span>
+        </span>
           {badgeText ? (
             <Badge pill bg={badgeBg} text={badgeColor} className="badge-md notification-count ms-2">{badgeText}</Badge>
           ) : null}
@@ -69,6 +69,7 @@ let Props = () => {
     );
   };
 
+  
   function userUI() {
     if (status === statuses[1]) {
       return <>
